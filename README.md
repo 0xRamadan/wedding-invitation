@@ -39,11 +39,9 @@ Every animation, every color choice, every line of Arabic calligraphy was placed
 | ⏳ **Live Countdown** | Real-time countdown to the big day — September 25th, 2026 |
 | 📅 **Interactive Calendar** | Visual calendar highlighting the engagement date |
 | 📸 **Photo Gallery** | A curated collection of the couple's moments together |
-| 🗓️ **Event Timeline** | Step-by-step schedule of the evening's events |
-| 👔 **Dress Code Guide** | So guests show up looking their best |
-| 📍 **Venue & Map** | Google Maps integration — Haras El-Hodood Club, Zamalek |
+| 📍 **Venue & Map** | Google Maps integration — Star Club, Shubra El Kheima |
 | ✅ **RSVP System** | Interactive modal for guests to confirm attendance |
-| 💬 **Guestbook** | Leave a heartfelt message for the couple |
+| 💬 **Private Guestbook** | Confidential wishes submission with a private 3D page-turning interactive book viewer for the couple (`#/guestbook-private`) |
 | 🎵 **Background Music** | Ambient audio player with play/pause toggle |
 | ✍️ **Bilingual UI** | Seamless Arabic + English typography throughout |
 
@@ -57,7 +55,7 @@ This project is built with a modern, production-grade frontend stack:
 React 19          →  UI library with latest concurrent features
 TypeScript        →  Type-safe development, zero `any` shortcuts
 Tailwind CSS 4    →  Utility-first styling with custom design tokens
-Framer Motion     →  Silky-smooth page transitions & micro-animations
+Framer Motion     →  Silky-smooth page transitions & 3D book flip animations
 Lucide React      →  Crisp, minimal icon set
 Vite 6            →  Lightning-fast dev server & optimized builds
 GitHub Pages      →  Free, reliable static hosting
@@ -78,18 +76,18 @@ Engagement-main/
 │   │   ├── AudioPlayer.tsx    # 🎵 Floating music player
 │   │   ├── Countdown.tsx      # ⏳ Live countdown timer
 │   │   ├── Cover.tsx          # 🎬 Cinematic entrance screen
-│   │   ├── DressCode.tsx      # 👔 Dress code section
 │   │   ├── Gallery.tsx        # 📸 Photo gallery with lightbox
-│   │   ├── Guestbook.tsx      # 💬 Guest messages section
+│   │   ├── Guestbook.tsx      # 💬 Guest wishes submission form
 │   │   ├── InteractiveCalendar.tsx  # 📅 Calendar widget
 │   │   ├── Invitation.tsx     # 📜 Main invitation layout
+│   │   ├── PrivateGuestbook.tsx # 📖 3D book viewer for couple
 │   │   ├── RSVPModal.tsx      # ✅ RSVP confirmation modal
-│   │   ├── Sparkles.tsx       # ✨ Decorative sparkle effects
-│   │   └── Timeline.tsx       # 🗓️ Event schedule timeline
-│   ├── data/                  # Data layer (extensible)
+│   │   └── Sparkles.tsx       # ✨ Decorative sparkle effects
+│   ├── utils/
+│   │   └── guestbookStorage.ts # 💾 LocalStorage & date formatting
 │   ├── App.tsx                # Root component & audio logic
-│   ├── main.tsx               # React DOM entry point
-│   └── index.css              # Global styles & design tokens
+│   ├── main.tsx               # Client router & DOM entry point
+│   └── index.css              # Global styles & 3D book design tokens
 ├── index.html                 # HTML shell
 ├── vite.config.ts             # Vite + Tailwind + React config
 ├── tsconfig.json              # TypeScript configuration

@@ -6,8 +6,7 @@ import Sparkles from "./Sparkles";
 import Gallery from "./Gallery";
 import InteractiveCalendar from "./InteractiveCalendar";
 import RSVPModal from "./RSVPModal";
-import DressCode from "./DressCode";
-import Timeline from "./Timeline";
+
 import Guestbook from "./Guestbook";
 
 export default function Invitation() {
@@ -131,11 +130,7 @@ export default function Invitation() {
         {/* Photo Gallery Section */}
         <Gallery />
 
-        {/* Timeline Schedule */}
-        <Timeline />
 
-        {/* Dress Code */}
-        <DressCode />
 
         {/* Location Section */}
         <motion.div
@@ -152,14 +147,14 @@ export default function Invitation() {
              </div>
              <div className="text-right" dir="ltr">
                 <div className="text-[10px] uppercase tracking-widest font-sans font-extrabold text-brand-primary">The Venue</div>
-                <div className="text-sm font-sans font-semibold mt-1">نادي حرس الحدود، الزمالك</div>
+                <div className="text-sm font-sans font-semibold mt-1">نادى ستار كلوب، شبرا الخيمة</div>
              </div>
           </div>
 
           <p className="font-arabic text-xl sm:text-2xl text-brand-primary font-light mb-12 leading-loose max-w-lg">
             بكل الحب ننتظركم لتشاركونا فرحتنا يوم الجمعة ٢٥ سبتمبر ٢٠٢٦،
             <br />
-            في نادي حرس الحدود بالزمالك - قاعة أوركيدا.
+            في نادى ستار كلوب، كورنيش النيل، شبرا الخيمة.
           </p>
 
           {/* Map */}
@@ -167,7 +162,7 @@ export default function Invitation() {
              {/* Map overlays */}
              <div className="absolute inset-0 border-[10px] border-brand-bg/20 z-10 pointer-events-none"></div>
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d13813.1952542065!2d31.22129!3d30.0573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410708f39fc7%3A0x6b19a3b754988775!2sZamalek%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.5!2d31.2475!3d30.1285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z469Q%2BVRV!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -179,7 +174,7 @@ export default function Invitation() {
           </div>
 
           <a 
-            href="https://goo.gl/maps/generic_link" 
+            href="https://www.google.com/maps/search/469Q%2BVRV+شبرا+الخيمة" 
             target="_blank"
             rel="noopener noreferrer"
             className="px-10 py-4 bg-brand-primary text-brand-bg text-[11px] uppercase tracking-[0.3em] font-sans hover:bg-brand-accent transition-colors rounded-full"

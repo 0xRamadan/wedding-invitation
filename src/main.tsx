@@ -1,10 +1,27 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+import { StrictMode, useState, useEffect } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import PrivateGuestbook from "./components/PrivateGuestbook.tsx";
+import "./index.css";
 
-createRoot(document.getElementById('root')!).render(
+function Router() {
+  const [route, setRoute] = useState(window.location.hash);
+
+  useEffect(() => {
+    const handleHashChange = () => setRoute(window.location.hash);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  if (route === "#/guestbook-private") {
+    return <PrivateGuestbook />;
+  }
+
+  return <App />;
+}
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <Router />
+  </StrictMode>
 );
