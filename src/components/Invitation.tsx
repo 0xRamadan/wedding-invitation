@@ -103,7 +103,7 @@ export default function Invitation() {
            <h2 className="tracking-[0.3em] text-[11px] sm:text-xs uppercase font-sans font-extrabold text-brand-primary mb-3">
              Save The Date
            </h2>
-           <p className="text-xl sm:text-3xl font-serif italic text-brand-accent font-medium mb-8 sm:mb-12">
+           <p className="text-xl sm:text-3xl font-serif italic text-brand-accent font-medium mb-8 sm:mb-12" dir="ltr">
              Friday, September 25th, 2026
            </p>
           

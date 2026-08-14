@@ -191,7 +191,7 @@ export default function PrivateGuestbook() {
                 رشاد و إسراء
               </p>
               <div className="w-20 sm:w-24 h-[1px] bg-brand-accent/60 mx-auto mt-4 sm:mt-6 mb-3 sm:mb-4" />
-              <p className="font-sans text-[10px] sm:text-xs text-brand-secondary tracking-[0.3em] uppercase font-bold">
+              <p className="font-sans text-[10px] sm:text-xs text-brand-secondary tracking-[0.3em] uppercase font-bold" dir="ltr">
                 25 September 2026
               </p>
             </motion.div>

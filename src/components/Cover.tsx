@@ -85,6 +85,7 @@ export default function Cover({ onOpen }: CoverProps) {
           {/* Date Tag */}
           <motion.p
             variants={itemVariants}
+            dir="ltr"
             className="font-sans text-[11px] sm:text-xs text-brand-secondary font-bold tracking-[0.3em] uppercase mt-6 sm:mt-10 mb-8 sm:mb-10 px-4 py-1.5 rounded-full bg-white/50 backdrop-blur-xs border border-brand-border/40"
           >
             25 September 2026
