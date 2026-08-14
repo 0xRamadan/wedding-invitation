@@ -21,22 +21,22 @@ function FlipDigit({ value, label, labelAr }: TimeUnit) {
             className="relative"
             style={{ perspective: "400px" }}
           >
-            <div className="w-16 h-20 sm:w-22 sm:h-28 bg-gradient-to-b from-white/90 to-brand-faint/90 backdrop-blur-sm border border-brand-border/50 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden">
+            <div className="w-13 h-17 xs:w-15 xs:h-19 sm:w-20 sm:h-26 md:w-24 md:h-28 bg-gradient-to-b from-white/95 to-brand-faint/90 backdrop-blur-md border border-brand-border/60 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-md relative overflow-hidden">
               {/* Shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-br from-white/50 via-transparent to-transparent pointer-events-none" />
               {/* Center line */}
               <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-brand-border/30" />
-              <span className="text-3xl sm:text-5xl font-sans font-light text-brand-primary relative z-10 tabular-nums">
+              <span className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-sans font-light text-brand-primary relative z-10 tabular-nums">
                 {value.toString().padStart(2, "0")}
               </span>
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
-      <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] font-sans font-bold text-brand-secondary mt-3">
+      <span className="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] font-sans font-bold text-brand-secondary mt-2 sm:mt-3">
         {label}
       </span>
-      <span className="text-[10px] font-arabic text-brand-accent font-bold mt-0.5">
+      <span className="text-[9px] sm:text-[10px] font-arabic text-brand-accent font-bold mt-0.5">
         {labelAr}
       </span>
     </div>
@@ -45,16 +45,16 @@ function FlipDigit({ value, label, labelAr }: TimeUnit) {
 
 function Separator() {
   return (
-    <div className="flex flex-col items-center gap-2.5 mt-3">
+    <div className="flex flex-col items-center gap-1.5 sm:gap-2.5 mt-4 sm:mt-6">
       <motion.div
         animate={{ opacity: [1, 0.3, 1] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        className="w-1.5 h-1.5 rounded-full bg-brand-accent"
+        className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-brand-accent"
       />
       <motion.div
         animate={{ opacity: [0.3, 1, 0.3] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        className="w-1.5 h-1.5 rounded-full bg-brand-accent"
+        className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-brand-accent"
       />
     </div>
   );
@@ -102,9 +102,9 @@ export default function Countdown() {
   ];
 
   return (
-    <div className="flex justify-center items-start gap-3 sm:gap-6 mt-4 z-10" dir="ltr">
+    <div className="flex justify-center items-start gap-1.5 xs:gap-2.5 sm:gap-4 md:gap-6 mt-4 z-10 max-w-full px-2" dir="ltr">
       {units.map((unit, index) => (
-        <div key={unit.label} className="flex items-start gap-3 sm:gap-6">
+        <div key={unit.label} className="flex items-start gap-1.5 xs:gap-2.5 sm:gap-4 md:gap-6">
           <FlipDigit {...unit} />
           {index < units.length - 1 && <Separator />}
         </div>

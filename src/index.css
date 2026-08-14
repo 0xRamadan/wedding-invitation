@@ -40,9 +40,21 @@ body {
 .book-container {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 340px;
   aspect-ratio: 3 / 4;
   perspective: 1500px;
+}
+
+@media (min-width: 400px) {
+  .book-container {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 480px) {
+  .book-container {
+    max-width: 440px;
+  }
 }
 
 @media (min-width: 640px) {

@@ -13,7 +13,12 @@ function Router() {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
-  if (route === "#/guestbook-private") {
+  if (
+    route === "#/guestbook-private" ||
+    route === "#/rsvp-private" ||
+    route === "#/private" ||
+    route === "#/dashboard"
+  ) {
     return <PrivateGuestbook />;
   }
 
