@@ -98,14 +98,25 @@ export default function Invitation() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="mb-16 sm:mb-24 w-full"
+          className="mb-16 sm:mb-24 w-full flex flex-col items-center"
         >
-           <h2 className="tracking-[0.3em] text-[11px] sm:text-xs uppercase font-sans font-extrabold text-brand-primary mb-3">
-             Save The Date
-           </h2>
-           <p className="text-xl sm:text-3xl font-serif italic text-brand-accent font-medium mb-8 sm:mb-12" dir="ltr">
-             Friday, September 25th, 2026
-           </p>
+          <div className="inline-block tracking-[0.3em] text-[11px] sm:text-xs uppercase font-sans font-extrabold text-brand-primary mb-3">
+            Save The Date
+          </div>
+
+          {/* Arabic Date */}
+          <h3 className="font-arabic text-2xl sm:text-4xl font-bold text-brand-primary mb-2">
+            الجمعة، ٢٥ سبتمبر ٢٠٢٦
+          </h3>
+
+          {/* English Date with strict LTR isolation */}
+          <p 
+            dir="ltr" 
+            style={{ direction: "ltr", unicodeBidi: "isolate" }}
+            className="text-lg sm:text-2xl font-serif italic text-brand-accent font-semibold mb-8 sm:mb-12"
+          >
+            Friday, September 25, 2026
+          </p>
           
           <Countdown />
         </motion.div>
