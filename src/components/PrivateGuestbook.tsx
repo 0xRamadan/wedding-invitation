@@ -69,7 +69,7 @@ export default function PrivateGuestbook() {
 
   const handleCopyList = () => {
     const lines = [
-      `💍 كشف حضور خطوبة رشاد وإسراء 💍`,
+      `💍 كشف حضور زفاف محمود وإيمان 🤵🏻👰🏻‍♀️`,
       `إجمالي الحضور المتوقع: ${stats.totalGuestsCount} فرد (${stats.totalSubmissions} تأكيد)`,
       `────────────────────────────`,
       ...rsvps.map((entry, index) => 
@@ -185,10 +185,10 @@ export default function PrivateGuestbook() {
               </h1>
               <div className="w-20 sm:w-24 h-[1px] bg-brand-accent/60 mx-auto mb-4 sm:mb-6" />
               <p className="font-serif text-xl sm:text-3xl text-brand-primary italic mb-1 sm:mb-2">
-                Rashad & Esraa
+                Mahmoud & Eman
               </p>
               <p className="font-calligraphy text-lg sm:text-xl text-brand-accent mt-2 sm:mt-4">
-                رشاد و إسراء
+                محمود و إيمان
               </p>
               <div className="w-20 sm:w-24 h-[1px] bg-brand-accent/60 mx-auto mt-4 sm:mt-6 mb-3 sm:mb-4" />
               <p className="font-sans text-[10px] sm:text-xs text-brand-secondary tracking-[0.3em] uppercase font-bold" dir="ltr">
@@ -240,7 +240,7 @@ export default function PrivateGuestbook() {
               كل رسالة منكم هي ذكرى جميلة هنفتكرها طول العمر
             </p>
             <p className="font-serif text-xs sm:text-sm text-brand-accent italic mt-6 sm:mt-8 font-semibold">
-              — R & E —
+              — M & E —
             </p>
 
             <div className="absolute bottom-6 sm:bottom-8">
@@ -340,7 +340,7 @@ export default function PrivateGuestbook() {
             Private Dashboard
           </div>
           <div className="font-arabic text-xs text-brand-secondary font-semibold">
-            رشاد وإسراء 💍
+            محمود وإيمان 🤵🏻👰🏻‍♀️
           </div>
         </div>
       </header>

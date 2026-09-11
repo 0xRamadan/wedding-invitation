@@ -22,20 +22,20 @@ function generateICSFile(): void {
   const icsContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Rashad & Esraa//Engagement//EN",
+    "PRODID:-//Mahmoud & Eman//Wedding//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",
-    "DTSTART:20260925T190000",
-    "DTEND:20260926T010000",
-    "SUMMARY:💍 خطوبة رشاد وإسراء",
-    "DESCRIPTION:حفل خطوبة رشاد وإسراء - نادى ستار كلوب، شبرا الخيمة",
-    "LOCATION:نادى ستار كلوب، شبرا الخيمة",
+    "DTSTART:20260925T170000",
+    "DTEND:20260926T210000",
+    "SUMMARY:🤵🏻👰🏻‍♀️ زفاف محمود و إيمان",
+    "DESCRIPTION:حفل زفاف محمود و إيمان - قاعة الغندور - أولادصقر الشرقية",
+    "LOCATION:قاعة الغندور - أولادصقر الشرقية",
     "STATUS:CONFIRMED",
     "BEGIN:VALARM",
     "TRIGGER:-P1D",
     "ACTION:DISPLAY",
-    "DESCRIPTION:غداً حفل خطوبة رشاد وإسراء 💍",
+    "DESCRIPTION:غداً حفل زفاف محمود وإيمان 🤵🏻👰🏻‍♀️",
     "END:VALARM",
     "END:VEVENT",
     "END:VCALENDAR",
@@ -45,7 +45,7 @@ function generateICSFile(): void {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "rashad-esraa-engagement.ics";
+  link.download = "mahmoud-eman-wedding.ics";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -75,7 +75,7 @@ export default function InteractiveCalendar() {
     setCurrentYear(newYear);
   };
 
-  const isEngagementDay = (day: number) =>
+  const isWeddingDay = (day: number) =>
     currentYear === 2026 && currentMonth === 8 && day === 25;
 
   const isPast = (day: number) => {
@@ -168,9 +168,9 @@ export default function InteractiveCalendar() {
             <div key={index} className="aspect-square flex items-center justify-center relative">
               {day !== null && (
                 <motion.div
-                  whileHover={isEngagementDay(day) ? { scale: 1.12 } : { scale: 1.05 }}
+                  whileHover={isWeddingDay(day) ? { scale: 1.12 } : { scale: 1.05 }}
                   className={`w-full h-full flex items-center justify-center rounded-lg text-xs sm:text-sm font-sans relative transition-all duration-200 ${
-                    isEngagementDay(day)
+                    isWeddingDay(day)
                       ? "bg-brand-accent text-white font-bold shadow-md cursor-pointer ring-2 ring-brand-accent/50"
                       : isToday(day)
                       ? "bg-brand-primary/10 text-brand-primary font-semibold border border-brand-primary/30"
@@ -179,7 +179,7 @@ export default function InteractiveCalendar() {
                       : "text-brand-primary hover:bg-brand-faint"
                   }`}
                 >
-                  {isEngagementDay(day) && (
+                  {isWeddingDay(day) && (
                     <motion.div
                       animate={{ scale: [1, 1.25, 1] }}
                       transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
@@ -199,7 +199,7 @@ export default function InteractiveCalendar() {
         <div className="flex items-center justify-center gap-4 sm:gap-6 mt-4 pt-3 border-t border-brand-border/40">
           <div className="flex items-center gap-1.5">
             <div className="w-3 h-3 rounded-xs bg-brand-accent shadow-xs" />
-            <span className="text-[10px] font-arabic font-medium text-brand-secondary">يوم الخطوبة</span>
+            <span className="text-[10px] font-arabic font-medium text-brand-secondary">يوم الزفاف</span>
           </div>
           <div className="flex items-center gap-1.5">
             <div className="w-3 h-3 rounded-xs border border-brand-primary/30 bg-brand-primary/10" />

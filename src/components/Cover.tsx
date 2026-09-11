@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import Sparkles from "./Sparkles";
-import ringsBg from "../assets/rings.png";
+import ringsBg from "../assets/cover.jpeg";
 import type { Key } from "react";
 
 interface CoverProps {
@@ -67,18 +67,18 @@ export default function Cover({ onOpen }: CoverProps) {
             variants={itemVariants}
             className="font-arabic text-base sm:text-xl text-brand-primary mb-4 sm:mb-6 font-extrabold tracking-[0.2em] uppercase"
           >
-            دعوة خطوبة
+            دعوة زفاف
           </motion.h2>
           
           {/* Main Names */}
           <motion.div variants={itemVariants} className="relative z-10 w-full py-2">
             <Sparkles count={15} />
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-[1.08] text-brand-primary relative z-10 tracking-tight">
-              Rashad
+              Mahmoud
               <span className="text-3xl sm:text-5xl font-serif italic font-normal text-brand-accent block my-2 sm:my-3">
                 &
               </span>
-              Esraa
+              Eman
             </h1>
           </motion.div>
 

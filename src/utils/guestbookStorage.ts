@@ -5,7 +5,7 @@ export interface GuestMessage {
   timestamp: string; // ISO string for JSON serialization
 }
 
-const STORAGE_KEY = "engagement_guestbook_messages";
+const STORAGE_KEY = "Wedding_guestbook_messages";
 
 export function saveMessage(name: string, message: string): GuestMessage {
   const newMessage: GuestMessage = {

@@ -3,8 +3,8 @@ import { AnimatePresence } from "motion/react";
 import Cover from "./components/Cover";
 import Invitation from "./components/Invitation";
 import AudioPlayer from "./components/AudioPlayer";
-import ringsBg from "./assets/rings.png";
-import musicTrack from "./assets/el-leil-we-samah.mpeg";
+import ringsBg from "./assets/cover.jpeg";
+import musicTrack from "./assets/song.mp3";
 
 export default function App() {
   const [isOpened, setIsOpened] = useState(false);

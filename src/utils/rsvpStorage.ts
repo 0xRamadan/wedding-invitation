@@ -6,7 +6,7 @@ export interface RSVPEntry {
   timestamp: string; // ISO string
 }
 
-const STORAGE_KEY = "engagement_rsvp_submissions";
+const STORAGE_KEY = "wedding_rsvp_submissions";
 
 export function getRSVPs(): RSVPEntry[] {
   try {
@@ -85,7 +85,7 @@ export function exportRSVPsToCSV(): void {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `كشف-حضور-خطوبة-رشاد-وإسراء-${new Date().toISOString().slice(0, 10)}.csv`;
+  link.download = `كشف-حضور-زفاف-محمود-وإيمان-${new Date().toISOString().slice(0, 10)}.csv`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

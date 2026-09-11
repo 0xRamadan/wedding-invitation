@@ -75,19 +75,19 @@ export default function Invitation() {
           </span>
 
           <h2 className="font-arabic text-base sm:text-xl text-brand-primary font-extrabold tracking-[0.2em] mb-8 sm:mb-12 uppercase" dir="rtl">
-            نتشرف بدعوتكم لحضور حفل خطوبتنا
+            نتشرف بدعوتكم لحضور حفل زفافنا
           </h2>
           
           <div className="relative inline-block w-full max-w-lg mt-2 sm:mt-6">
             <Sparkles count={18} />
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none text-brand-primary z-10 block relative tracking-tight">
-              Rashad
+              Mahmoud
             </h1>
             <span className="text-3xl sm:text-5xl font-serif italic font-normal text-brand-accent block my-3 sm:my-6 relative z-10">
               &amp;
             </span>
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none text-brand-primary z-10 block relative tracking-tight">
-              Esraa
+              Eman
             </h1>
           </div>
         </motion.div>
@@ -179,14 +179,14 @@ export default function Invitation() {
              </div>
              <div className="text-right" dir="ltr">
                 <div className="text-[10px] uppercase tracking-widest font-sans font-extrabold text-brand-secondary">The Venue</div>
-                <div className="text-sm font-sans font-bold text-brand-primary mt-0.5">نادى ستار كلوب، شبرا الخيمة</div>
+                <div className="text-sm font-sans font-bold text-brand-primary mt-0.5"> قاعة الغندور أولاد صقر </div>
              </div>
           </div>
 
           <p className="font-arabic text-lg sm:text-2xl text-brand-primary font-medium mb-8 leading-relaxed max-w-lg px-4">
-            بكل الحب ننتظركم لتشاركونا فرحتنا يوم الجمعة ٢٥ سبتمبر ٢٠٢٦،
+            بكل الحب ننتظركم لتشاركونا فرحتنا يوم الجمعة ٢٥ سبتمبر ٢٠٢٦
             <br />
-            في نادى ستار كلوب، كورنيش النيل، شبرا الخيمة.
+             في قاعة الغندور أولادصقر - الشرقية
           </p>
 
           {/* Map */}
@@ -194,7 +194,7 @@ export default function Invitation() {
             <div className="absolute inset-0 border-[6px] sm:border-[10px] border-brand-bg/30 z-10 pointer-events-none rounded-2xl"></div>
             <iframe 
               title="موقع الحفل على الخريطة"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.5!2d31.2475!3d30.1285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z469Q%2BVRV!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.263942473044!2d31.704612576199132!3d30.93519207581882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f82b000643af5f%3A0xdd8f885eece41458!2z2YLYp9i52Kkg2YjYs9mK2LTZhiDYp9mE2LrZhtiv2YjYsSDYp9mK2YHZhtiq!5e0!3m2!1sen!2ssa!4v1789156163354!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -206,7 +206,7 @@ export default function Invitation() {
           </div>
 
           <a 
-            href="https://www.google.com/maps/search/469Q%2BVRV+شبرا+الخيمة" 
+            href="https://maps.app.goo.gl/NYcLqX7MBkgNYbNW7" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-8 sm:px-10 py-3.5 sm:py-4 bg-brand-primary text-brand-bg text-[11px] sm:text-xs uppercase tracking-[0.25em] font-sans font-bold hover:bg-brand-accent transition-all duration-300 rounded-full shadow-md hover:shadow-xl"

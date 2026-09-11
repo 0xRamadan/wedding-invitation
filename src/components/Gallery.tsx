@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Heart, Maximize2 } from "lucide-react";
-import photo1 from "../assets/Photo 1.png";
-import photo2 from "../assets/Photo 2.png";
+import engagement from "../assets/Engagement.jpeg";
+import ketbelketab from "../assets/ketbelketab.jpeg";
 
 interface PhotoItem {
   id: string;
@@ -17,19 +17,21 @@ interface PhotoItem {
 const galleryPhotos: PhotoItem[] = [
   {
     id: "photo-1",
-    src: photo1,
-    title: "بداية الحكاية",
-    titleEn: "Sweet Childhood",
-    caption: "ذكريات طفولة بريئة كانت أول سطور في أجمل قصة حب",
-    tag: "Then • طفولتنا",
+    src: engagement,
+    title: "الخطوبة",
+    titleEn: "The Engagement",
+    caption: "فجاءتْ على ميعادِ لُطفٍ خفيّةٍ كأنّ الليالي للمنى تستجيبُ",
+    tag: "2025",
+    year: "2025"
   },
   {
     id: "photo-2",
-    src: photo2,
-    title: "فرحتنا اليوم",
-    titleEn: "Engagement Day",
-    caption: "واليوم بنبدأ مع بعض خطوتنا الأولى نحو المستقبل والأبد",
-    tag: "Now • خطوبتنا",
+    src: ketbelketab,
+    title: "كتب الكتاب",
+    titleEn: "Ktb ElKetab",
+    caption: "وهذا كتابُ اللهِ بيني وبينها عهدٌ بهِ نبني، ووصلٌ يطيبُ",
+    tag: "2026",
+    year: "2026"
   },
 ];
 
@@ -133,7 +135,7 @@ export default function Gallery() {
               <span className="text-[10px] sm:text-[11px] font-sans font-bold tracking-widest text-brand-accent uppercase bg-brand-accent/10 px-2.5 sm:px-3 py-1 rounded-full border border-brand-accent/30">
                 {photo.tag}
               </span>
-
+              {/* <span></span> */}
               {/* Interactive Like Button */}
               <motion.button
                 whileTap={{ scale: 0.88 }}

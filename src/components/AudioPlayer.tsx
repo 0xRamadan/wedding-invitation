@@ -135,7 +135,7 @@ export default function AudioPlayer({ isPlaying, onToggle, audioRef }: AudioPlay
                 {isPlaying ? "شغالة الآن" : "موسيقى الدعوة"}
               </div>
               <div className="text-xs font-arabic text-brand-primary font-bold truncate">
-                الليل وسماه
+                ادخلي عمري
               </div>
             </div>
           </div>
